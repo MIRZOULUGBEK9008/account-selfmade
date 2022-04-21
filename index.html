@@ -7,11 +7,64 @@
   <title>Account</title>
 
   <!-- STYLES  -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- <link rel="stylesheet" href="css/css.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <link rel="stylesheet" href="css/css.min.css">
 </head>
 <body>
+  <main class="main-content">
+    <form class="main-form" action="https://echo.htmlacademy.ru/">
+      <header class="form-header">
+        <h1 class="form-main-heading">Account settings</h1>
+        <button class="close-button" type="button">
+          <img src="img/delete-icon.svg" width="25" height="25" alt="">
+        </button>
+      </header>
+
+      <div class="form-apllication-wrapper">
+        <div class="form-apllication">
+          <img class="avatar" src="img/avatar.jpg" width="128" height="128" srcset="img/avatar.jpg 1x, img/avatar@2x.jpg 2x" alt="avatar-icon">
+          <!-- USERNAME  -->
+          <div class="input-wrapper">
+            <label for="username">Username</label>
+            <input class="username-input" name="username" type="text" id="username" placeholder="Enter your username"
+            aria-label="Enter your username" required>
+          </div>
+          <div class="firstname_lastname-wrapper">
+            <!-- FIRST NAME  -->
+            <div class="input-wrapper">
+              <label for="firstname">First name</label>
+              <input class="firstname-input" name="firstname" type="text" id="firstname" placeholder="Enter your first name"
+              aria-label="Enter your first name" required>
+            </div>
+            <!-- LAST NAME  -->
+            <div class="input-wrapper">
+              <label for="lastname">Last name</label>
+              <input class="firstname-input" name="lastname" type="text" id="lastname" placeholder="Enter your last name"
+              aria-label="Enter your last name" required>
+            </div>
+          </div>
+          <!-- EMAIL  -->
+          <div class="input-wrapper">
+            <label for="email">Email</label>
+            <input class="email-input" name="email" type="email" id="email" placeholder="Enter your email"
+            aria-label="Enter your email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required>
+          </div>
+          <!-- BIO  -->
+          <label for="bio">Bio</label>
+          <div class="input-wrapper">
+            <textarea name="bio" id="bio" placeholder="Tell us about yourself"></textarea>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="button-wrapper">
+        <button type="reset" class="button">Cancel</button>
+        <button type="submit" class="button">Save</button>
+      </div>
+    </form>
+  </main>
 
 
   <script src="js/main.js"></script>
